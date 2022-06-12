@@ -1,23 +1,23 @@
-// code your solution here
+//code your solution here
 
-function saturdayFun () {
-  const lastpart = "bathe my dog";
-    console.log ("This Saturday, I want to " + lastpart + "!") ;
+let activity = "roller-skate";
 
-    return saturdayFun ();
-}
+function saturdayFun (activity) {
 
-function mondayWork () {
-  const lastpart = "work from home";
-    console.log ("This Monday, I will " + lastpart + ".") ;
+  return `This Saturday, I want to ${activity}!`
 
-    return mondayWork ();
 }
 
 
-function wrapAdjective (delimiter) {
-  return function (adjective) {
-    return "You are " + delimiter + adjective + delimiter + "!";
+function mondayWork (activity="go to the office") {
+    return mondayWork (`This Monday, I will ${activity}.`)
+}
+
+
+wrapAdjective = function(style="*") {
+  return function(adjective="special") {
+    return `You are ${style}${adjective}${style}!`
   }
 }
+
 
